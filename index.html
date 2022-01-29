@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script>$(document).ready(function(){$("nav ul li a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();var hash = this.hash;      $('html, body').animate({scrollTop: $(hash).offset().top}, 1000, function(){ window.location.hash = hash; });}}); });</script>
     <script>
       $(function(){
             $().timelinr({
@@ -20,25 +21,22 @@
     <nav>
         <ul>
           <li>
-            <a href="#">Intro</a>
+            <a href="#particles-js">Intro</a>
           </li>
           <li>
-            <a href="#">TimeLine</a>
+            <a href="#tl">TimeLine</a>
           </li>
           <li>
-            <a href="#">SkillSet</a>
+            <a href="#skillset">SkillSet</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#">Hobbies</a>
+            <a href="#profiles">Profiles</a>
           </li>
           <li>
-            <a href="#">Profiles</a>
-          </li>
-          <li>
-            <a href="#">Connect</a>
+            <a href="#connect">Connect</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +52,7 @@
           </div>
       </div>
     </div>
-    <div class="timeLineSection">
+    <div class="timeLineSection" id="tl">
       <div class="timeLineHeading sectionHeadingFont">
         Career Time Line
       </div>
@@ -108,7 +106,7 @@
     </div>
   </div>
 
-  <div class="skillSetSection">
+  <div class="skillSetSection" id="skillset">
     <h1 class="skillSetHeading sectionHeadingFont">SKILL SET</h1>
     <div class="skillIconsSection">
       <span class="iconify skillIcon" aria-label="C" data-icon="emojione-monotone:letter-c"></span>
@@ -134,7 +132,7 @@
     </div>
   </div>
 
-  <div class="projects">
+  <div class="projects" id="projects">
     <div class="projectSectionHeading sectionHeadingFont">
       PROJECTS
     </div>
@@ -200,7 +198,7 @@
     </div>
   </div>
 
-  <div class="profileSection">
+  <div class="profileSection" id="profiles">
     <div class="profileSectionHeading sectionHeadingFont">
       Coding Profiles
     </div>
@@ -242,6 +240,58 @@
         <span class="tooltiptext">HackerEarth</span>
       </div>
       
+    </div>
+  </div>
+
+  <div class="contactSection" id="connect">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>LET'S</span>
+            <span>CONNECT</span>
+          </div>
+          <div class="app-contact">
+            <a href="//api.whatsapp.com/send?phone=918851728643" title="Chat on Whatsapp">
+              <span class="iconify contactsIcon" data-icon="bx:bxl-whatsapp"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/saksham-gupta-6429291b3/" title="Checkout Linkedin Profile">
+              <span class="iconify contactsIcon" data-icon="ant-design:linkedin-outlined"></span>
+            </a>
+            <a href="mailto:gsaksham2000@gmail.com" title="Mail Me">
+              <span class="iconify contactsIcon" data-icon="ant-design:mail-outlined"></span>
+            </a>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
