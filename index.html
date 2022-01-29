@@ -16,6 +16,13 @@
             })
           });
     </script>
+    <script>
+      $(window).resize(function(){
+        $().timelinr({
+              arrowKeys: 'true'
+            })
+      })
+    </script>
 </head>
 <body>
     <nav>
@@ -41,14 +48,19 @@
         </ul>
       </nav>
       
-      <div id="particles-js">
+      <div id="particles-js" class="intro">
         <div class="heading">
-          <h1 class="sectionHeadingFont">Saksham Gupta</h1>
-          <div class="traits">
-            <h3>Budding Software Developer</h3>
-          <h3>Passionate Competitive Programmer</h3>
-          <h3>Experienced in Backend and CLoud</h3>
-          <h3>Interested in Web Dev and Machine Learning</h3>
+          <div class="imgPart">
+            <img src="images/profilePic.jpg" alt="">
+          </div>
+          <div class="textPart">
+            <h1 class="sectionHeadingFont">Saksham Gupta</h1>
+            <div class="traits">
+              <h3>Budding Software Developer</h3>
+            <h3>Passionate Competitive Programmer</h3>
+            <h3>Experienced in Backend and CLoud</h3>
+            <h3>Interested in Web Dev and Machine Learning</h3>
+            </div>
           </div>
       </div>
     </div>
@@ -99,10 +111,6 @@
         </li>
         
       </ul>
-      <div id="grad_left"></div>
-      <div id="grad_right"></div>
-      <a href="#" id="next">+</a>
-      <a href="#" id="prev">-</a>
     </div>
   </div>
 

@@ -46,29 +46,25 @@ nav ul li a:hover {
   font-weight: 1000;
 }
 
+.intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 #particles-js {
     background: #04095f;
-    height: 100vh;
+    min-height: 100vh;
     color:#ffffff
 }
 
-.fpara{
-  max-width: 1000px;
-  margin: auto;
-  height: fit-content;
-  background-color: rgb(19 175 216 / 36%);
-  padding: 20px;
-  border-radius: 20px;
-}
 
 .heading {
   position: absolute;
   text-align: center;
-  top: 30%;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -85,6 +81,21 @@ nav ul li a:hover {
   text-align: left;
 }
 
+.imgPart img{
+  width: 200px;
+  -webkit-box-shadow: 10px 9px 20px -4px rgba(242,234,242,1);
+-moz-box-shadow: 10px 9px 20px -4px rgba(242,234,242,1);
+box-shadow: 10px 9px 20px -4px rgba(242,234,242,1);
+border-radius: 10px;
+}
+
+.imgPart{
+  margin: 20px;
+}
+
+.textPart{
+  margin: 20px;
+}
 
 .timeLineSection a {
   color: #ffffcc;
