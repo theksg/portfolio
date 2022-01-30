@@ -71,6 +71,7 @@ nav ul li a:hover {
 .heading h1 {
   color: white;
   font-size: 70px;
+  text-align: left;
 }
 .heading h3 {
   color: #c1c9de;
@@ -137,8 +138,7 @@ border-radius: 10px;
 }
 
 #timeline {
-  width: 800px;
-  height: 350px;
+  width: 100%;
   overflow: hidden;
   margin: 100px auto;
   position: relative;
@@ -214,13 +214,21 @@ border-radius: 10px;
   transform: scale(0.7, 0.7);
 }
 
-#issues li h1,.timeLineHeading {
+#issues li h1 {
   color: #ffcc00;
   font-size: 48px;
   margin: 20px 0;
   text-shadow: #000 1px 1px 2px;
   text-align: left;
   padding-left: 70px;
+}
+
+.timeLineHeading {
+  color: #ffcc00;
+  font-size: 48px;
+  margin: 20px 0;
+  text-shadow: #000 1px 1px 2px;
+  text-align: center;
 }
 
 #issues li p {
@@ -281,7 +289,7 @@ border-radius: 10px;
 
 #next.disabled,
 #prev.disabled {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 
@@ -320,8 +328,7 @@ border-radius: 10px;
   font-size: 48px;
   margin: 20px 0;
   text-shadow: #000 1px 1px 2px;
-  text-align: left;
-  padding-left: 70px;
+  text-align: center;
 }
 
 .skillIconsSection{
@@ -359,6 +366,7 @@ border-radius: 10px;
     align-items: flex-end;
     transition: 0.4s ease-out;
     margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .card:hover{
   transform: translateY(20px)
@@ -513,8 +521,7 @@ border-radius: 10px;
   font-size: 48px;
   margin: 20px 0;
   text-shadow: #000 1px 1px 2px;
-  text-align: left;
-  padding-left: 70px;
+  text-align: center;
 }
 
 .contactSection {
@@ -748,5 +755,37 @@ border-radius: 10px;
 
   .screen-body-item {
     padding: 0;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .heading{
+    flex-direction: column;
+  }
+
+  .heading h1{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .imgPart img{
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .heading h3{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .skillIcon,.profileIcon{
+    margin: 20px;
+  }
+
+  .skillIcon{
+    height: 50px;
+    width: 50px;
   }
 }
