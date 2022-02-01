@@ -275,7 +275,7 @@ function autoPlay(){
 }
 
 
-function change_css_burger_icon(){
+async function change_css_burger_icon(){
 	const LIItems=document.getElementsByClassName('navBarLI')
 
 	for(let i=0;i<LIItems.length;i++)
@@ -285,7 +285,7 @@ function change_css_burger_icon(){
 	document.getElementById('navBarIconHamBurger').style.cssText='display:none;'
 }
 
-function change_css_cross_icon(){
+async function change_css_cross_icon(){
 	const LIItems=document.getElementsByClassName('navBarLI')
 
 	for(let i=0;i<LIItems.length;i++)
@@ -304,7 +304,7 @@ document.getElementById("navBarIconHamBurger").addEventListener("click", functio
 });
 
 
-function navbarClicked(){
+async function navbarClicked(){
 	var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 	if(width<=1000){
