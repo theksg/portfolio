@@ -302,4 +302,13 @@ document.getElementById("navBarIconCross").addEventListener("click", function(ev
 document.getElementById("navBarIconHamBurger").addEventListener("click", function(event){
 	event.preventDefault()
 });
+
+
+function navbarClicked(){
+	var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+	if(width<=1000){
+		change_css_cross_icon();
+	}
+}
   
