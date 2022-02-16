@@ -820,4 +820,12 @@ border-radius: 10px;
   .sectionHeadingFont{
     font-size: 30px;
   }
+
+  .card .info{
+    opacity: 1;
+  }
+
+  .card:before{
+    opacity: 1;
+  }
 }
