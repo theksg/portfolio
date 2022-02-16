@@ -607,6 +607,7 @@ border-radius: 10px;
 
 .screen-body {
   display: flex;
+  justify-content: center;
 }
 
 .screen-body-item {
@@ -616,7 +617,8 @@ border-radius: 10px;
 
 .screen-body-item.left {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .app-title {
@@ -625,6 +627,7 @@ border-radius: 10px;
   position: relative;
   color: #ffcc00;
   font-size: 26px;
+  margin-right: 31px;
 }
 
 .app-title:after {
@@ -726,10 +729,6 @@ border-radius: 10px;
     flex-direction: column;
   }
 
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
-
   .app-title {
     flex-direction: row;
   }
@@ -744,8 +743,8 @@ border-radius: 10px;
 }
 
 .contactsIcon{
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   transition: 05.s ease-in-out;
 }
 
@@ -803,5 +802,22 @@ border-radius: 10px;
   .skillIcon{
     height: 50px;
     width: 50px;
+  }
+
+  .screen-body-item.left{
+    flex-direction: column;
+  }
+
+  .contactsIcon{
+    height: 40px;
+    width: 40px;
+  }
+
+  .app-contact{
+    margin-top:20px;
+  }
+
+  .sectionHeadingFont{
+    font-size: 30px;
   }
 }
