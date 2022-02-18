@@ -77,6 +77,8 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+
 }
 .heading h1 {
   color: white;
@@ -860,8 +862,8 @@ border-radius: 10px;
   #dates .selected {
     font-size: 25px;
 }
-.particles-js-canvas-el{
-  width: 100vw;
-  height: 100vh;
-}
+.particles-js-canvas-el {
+  height: 100vmax !important;
+  z-index: 0;
+  }
 }
