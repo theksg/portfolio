@@ -314,4 +314,9 @@ function navbarClicked(){
 		change_css_cross_icon();
 	}
 }
+
+{const LIItems=document.getElementsByClassName('particles-js-canvas-el')
+
+for(let i=0;i<LIItems.length;i++)
+	LIItems[i].style.cssText = 'height:100vh;width:100vw';}
   
