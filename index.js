@@ -280,6 +280,8 @@ function change_css_burger_icon(){
 
 	for(let i=0;i<LIItems.length;i++)
 		LIItems[i].style.cssText = 'display:block;'
+
+	document.getElementById('nonIconItem').classList.add('container');
 	
 	document.getElementById('navBarIconCross').style.cssText='display:block;'
 	document.getElementById('navBarIconHamBurger').style.cssText='display:none;'
@@ -291,6 +293,7 @@ function change_css_cross_icon(){
 	for(let i=0;i<LIItems.length;i++)
 		LIItems[i].style.cssText = 'display:none;'
 	
+	document.getElementById('nonIconItem').classList.remove('container');
 	document.getElementById('navBarIconCross').style.cssText='display:none;'
 	document.getElementById('navBarIconHamBurger').style.cssText='display:block;'
 }
@@ -307,7 +310,7 @@ document.getElementById("navBarIconHamBurger").addEventListener("click", functio
 function navbarClicked(){
 	var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-	if(width<=1000){
+	if(width<=800){
 		change_css_cross_icon();
 	}
 }

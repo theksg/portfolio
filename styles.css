@@ -86,6 +86,7 @@ nav ul li a:hover {
 }
 
 .traits{
+  margin-top: 20px;
   text-align: left;
 }
 
@@ -769,6 +770,20 @@ border-radius: 10px;
   .navBarLI{
     display: none;
   }
+  #nonIconItem{
+    height: 0px;
+    opacity:0;
+  }
+  .container{
+    height:100vh;
+    opacity: 1;
+    -webkit-animation: expand 1s forwards;
+}
+
+@-webkit-keyframes expand{
+    0%{height:0px;opacity: 0;}
+    100%{height:100vh;opacity: 1;}
+}
   .navBarLiIcon{
     display: block;
   }
@@ -793,6 +808,7 @@ border-radius: 10px;
   .heading h3{
     font-size: 15px;
     text-align: left;
+    margin:10px;
   }
 
   .skillIcon,.profileIcon{
@@ -819,6 +835,7 @@ border-radius: 10px;
 
   .sectionHeadingFont{
     font-size: 30px;
+    padding: 0px 30px;
   }
 
   .card .info{
@@ -828,4 +845,16 @@ border-radius: 10px;
   .card:before{
     opacity: 1;
   }
+
+  #issues li h1{
+    font-size: 30px;
+  }
+
+  #dates a {
+    font-size: 18px;
+}
+
+  #dates .selected {
+    font-size: 25px;
+}
 }
