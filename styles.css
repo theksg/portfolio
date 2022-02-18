@@ -845,6 +845,11 @@ border-radius: 10px;
 
   .card .info{
     opacity: 1;
+    transform: translateY(0px)
+  }
+
+  .card:hover{
+    transform: translateY(0px)
   }
 
   .card:before{
