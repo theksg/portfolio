@@ -51,6 +51,9 @@ jQuery.fn.timelinr = function(options){
 		var widthDate = $(settings.datesDiv+' li').width();
 		var heightDate = $(settings.datesDiv+' li').height();
 		// set positions!
+		$(settings.issuesDiv+' li').width(widthContainer);
+		widthIssue = $(settings.issuesDiv+' li').width();
+
 		if(settings.orientation == 'horizontal') {	
 			$(settings.issuesDiv).width(widthIssue*howManyIssues);
 			$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);

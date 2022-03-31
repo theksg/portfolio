@@ -232,8 +232,7 @@ border-radius: 10px;
   font-size: 48px;
   margin: 20px 0;
   text-shadow: #000 1px 1px 2px;
-  text-align: left;
-  padding-left: 70px;
+  text-align: center;
 }
 
 .timeLineHeading {
@@ -251,6 +250,7 @@ border-radius: 10px;
   font-weight: normal;
   line-height: 22px;
   text-shadow: #000 1px 1px 2px;
+  text-align: center;
 }
 
 #grad_left,
