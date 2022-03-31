@@ -60,8 +60,8 @@ jQuery.fn.timelinr = function(options){
 			$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
 			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
 		}
-
-		$(settings.issuesDiv+' li'+' p').css('width',widthContainer-140);
+		var liWidth=$(settings.issuesDiv+' li').width();
+		$(settings.issuesDiv+' li'+' p').css('width',Math.min(liWidth-140,widthContainer-140));
 		
 		$(settings.datesDiv+' a').click(function(event){
 			event.preventDefault();
